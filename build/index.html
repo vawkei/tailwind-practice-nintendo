@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Tailwind Nintendo</title>
-</head>
-<body class="bg-gray-200">
-    <h1 class="text-red-500">Tailwind Nintendo</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title class="border-b">Tailwind Nintendo</title>
+  </head>
+  <body class="bg-gray-300">
+    <div class="relative flex items-center">
+      <header class="absolute top-14 ml-36 flex items-center">
+        <h1 class="border-b border-gray-50 text-lg font-bold text-red-500">
+          Tailwind Nintendo
+        </h1>
+        <nav class="">
+          <ul class="ml-4 pl-4">
+            <li class="mt-6">Home</li>
+            <li class="mt-6">About</li>
+            <li class="mt-6">Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="absolute left-96 top-24 ml-16">
+        <div class="flex justify-end">
+          <button class="button mr-4 border-2 border-red-500">
+            Login
+          </button>
+          <button class="button border-2 border-red-500">
+            Signup
+          </button>
+        </div>
+        <h1 class="text-6xl">Nintendo</h1>
+        <h3 class="text-xl text-gray-400">For Gamerz</h3>
+        <main>
+          <h5 class="mb-6 mt-6 font-bold text-gray-400">Some Consoles</h5>
+          <div id="Consoles" class="flex">
+            <div class="card mb-6 hover:shadow-lg">
+              <img src="./img/nintendo.jpeg" class="h-56 w-full object-cover" />
+              <div class="p-4">
+                <span class="block">A Black Game Boy</span>
+                <span class="block">Ben Griffiths</span>
+              </div>
+            </div>
+            <div class="card mb-6 hover:shadow-lg">
+              <img
+                src="./img/gameboy.jpeg"
+                alt=""
+                class="h-56 w-full object-cover" />
+              <div class="p-4">
+                <span class="block">A Nintendo Gameboy</span>
+                <span class="block">Nik</span>
+              </div>
+            </div>
+            <div class="card mb-6 hover:shadow-lg">
+              <img
+                src="./img/Nintendoswitch.jpeg"
+                alt=""
+                class="h-56 w-full object-cover" />
+              <div class="p-4">
+                <span class="block">A Nintendo Switch</span>
+                <span class="block">Yasin Hasan</span>
+              </div>
+            </div>
+          </div>
+          <p class="mb-6 mt-6 font-bold text-gray-400">Most Popular</p>
+        </main>
+        <div class="mb-4 flex justify-center">
+          <button
+            class=" bg-red-100 button">
+            Load More
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

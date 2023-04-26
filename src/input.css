@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply overflow-hidden rounded-lg bg-white mr-4 shadow-2xl cursor-pointer
+}
+.button{
+    @apply px-2 py-2 text-xs uppercase tracking-wider transition  duration-500 ease-out  hover:scale-50 rounded-full
+}
