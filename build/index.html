@@ -8,7 +8,7 @@
     <title class="border-b">Tailwind Nintendo</title>
   </head>
   <body class="bg-gray-300">
-    <div class="md:flex items-center md:relative">
+    <div class="items-center md:relative md:flex">
       <div class="absolute right-8 top-6 cursor-pointer" id="burger">
         <svg
           class="w-10 md:hidden"
@@ -24,9 +24,12 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
         </svg>
       </div>
-      <header class=" m-4  md:absolute md:top-14 md:ml-36 md:flex md:items-center">
-        <h1 class="text-lg text-green-500 font-bold uppercase border-b border-gray-100 md:text-lg md:font-bold md:text-red-500">
-         <span> Tailwind </span> <span class="block md:hidden"> Nintendo </span>
+      <header
+        class="m-4 md:absolute md:top-14 md:ml-36 md:flex md:items-center">
+        <h1
+          class="border-b border-gray-100 text-lg font-bold uppercase text-green-500 md:text-lg md:font-bold md:text-red-500">
+          <span> Tailwind </span>
+          <span class="block md:hidden"> Nintendo </span>
         </h1>
         <nav class="">
           <ul class="hidden pl-4 md:ml-4 md:block">
@@ -36,16 +39,21 @@
           </ul>
         </nav>
       </header>
-      <div class=" ml-6  md:absolute left-96 top-24 md:ml-16">
-        <div class=" flex justify-center  md:flex md:justify-end">
-          <button class="  text-green-500   button  md: mr-4 md:border-2 border-red-500">Login</button>
-          <button class="   text-green-500  button  md:border-2 md:border-red-500">Signup</button>
+      <div class="left-96 top-24 ml-6 md:absolute md:ml-16">
+        <div class="flex justify-center md:flex md:justify-end">
+          <button
+            class="button md: mr-4 border-red-500 text-green-500 md:border-2">
+            Login
+          </button>
+          <button class="button text-green-500 md:border-2 md:border-red-500">
+            Signup
+          </button>
         </div>
         <h1 class="text-6xl">Nintendo</h1>
         <h3 class="text-xl text-gray-400">For Gamerz</h3>
         <main>
           <h5 class="mb-6 mt-6 font-bold text-gray-400">Some Consoles</h5>
-          <div id="Consoles" class=" md:flex">
+          <div id="Consoles" class="md:flex">
             <div class="card mb-6 hover:shadow-lg">
               <img src="./img/nintendo.jpeg" class="h-56 w-full object-cover" />
               <div class="p-4">
@@ -77,9 +85,49 @@
           <p class="mb-6 mt-6 font-bold text-gray-400">Most Popular</p>
         </main>
         <div class="mb-4 flex justify-center">
-          <button class="button bg-red-100">Load More</button>
+          <button class="button bg-red-100 " id="avaDevine">Load More</button>
         </div>
+        <main class="hidden" id="lisaLipps" >
+          <h5 class="mb-6 mt-6 font-bold text-gray-400">More Consoles</h5>
+          <div id="Consoles" class="md:flex">
+            <div class="card mb-6 hover:shadow-lg">
+              <img
+                src="./img/Nintendo64.jpeg"
+                class="h-56 w-full object-cover" />
+              <div class="p-4">
+                <span class="block">A Black Game Boy</span>
+                <span class="block">Ben Griffiths</span>
+              </div>
+            </div>
+            <div class="card mb-6 hover:shadow-lg">
+              <img
+                src="./img/supernintendo (1).jpeg"
+                alt=""
+                class="h-56 w-full object-cover" />
+              <div class="p-4">
+                <span class="block">A Nintendo Gameboy</span>
+                <span class="block">Nik</span>
+              </div>
+            </div>
+            <div class="card mb-6 hover:shadow-lg">
+              <img
+                src="./img/nintendotm.jpeg"
+                alt=""
+                class="h-56 w-full object-cover" />
+              <div class="p-4">
+                <span class="block">A Nintendo Switch</span>
+                <span class="block">Yasin Hasan</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <p class="mb-6 mt-6  font-bold text-gray-400">
+              HouseofwebZ &copy;2023
+            </p>
+          </div>
+        </main>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
